@@ -13,4 +13,9 @@ class Route
     {
         return Application::$app->router->post($path, $callback);
     }
+
+    public static function view($path, $callback)
+    {
+        return $path." ".$callback;
+    }
 }
